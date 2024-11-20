@@ -1,0 +1,325 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241120201618
+Username: WORKGROUP\SYSTEM
+RunAs User: WORKGROUP\SYSTEM
+Configuration Name: 
+Machine: Win11VM8 (Microsoft Windows NT 10.0.22621.0)
+Host Application: powershell.exe -executionpolicy bypass .\StartMigrate.ps1
+Process ID: 4812
+PSVersion: 5.1.22621.4249
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4249
+BuildVersion: 10.0.22621.4249
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\ProgramData\IntuneMigration\migration.log
+Running as...
+nt authority\system
+
+Authenticating to MS Graph...
+MS Graph Authenticated
+Gathering device info...
+Serial number is 0000-0008-1718-9950-9542-7681-08
+Autopilot ID is
+Intune ID is cdd8fa18-280f-438d-8668-d7f4b38a5168
+Current Autopilot GroupTag is .
+Current active user is
+-a----        11/20/2024   8:16 PM              0 MEM_Settings.xml
+Setting local content to C:\ProgramData\IntuneMigration\MEM_Settings.xml
+Setting MDM registry value for AllowMicrosoftAccountConnection...
+The operation completed successfully.
+
+Turning off Last Signed-In User Display....
+Enabled Interactive Logon policy
+C:\Users\\AppData\Local size is 0.00 Gb
+C:\Users\\AppData\Roaming size is 0.00 Gb
+C:\Users\\Documents size is 0.00 Gb
+C:\Users\\Desktop size is 0.00 Gb
+C:\Users\\Pictures size is 0.00 Gb
+C:\Users\\Videos size is 0.00 Gb
+C:\Users\\Music size is 0.00 Gb
+C:\Users\\Downloads size is 0.00 Gb
+The size of  user data is 0.00 GB.
+There is 106.34 GB of free space available on the PC.
+0.00 GB is required to transfer local user data.
+106.34 GB of free space is sufficient to transfer 0.00 GB of local user data.  Begin transfer...
+
+
+    Directory: C:\Users\Public\Temp\AppData
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/20/2024   8:16 PM                Local
+Initiating backup of AppData\Local
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\AppData\Local\
+     Dest : C:\Users\Public\Temp\AppData\Local\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 3 (0x00000003) Accessing Source Directory C:\Users\AppData\Local\
+The system cannot find the path specified.
+d-----        11/20/2024   8:16 PM                Roaming
+Initiating backup of AppData\Roaming
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\AppData\Roaming\
+     Dest : C:\Users\Public\Temp\AppData\Roaming\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 3 (0x00000003) Accessing Source Directory C:\Users\AppData\Roaming\
+The system cannot find the path specified.
+
+
+    Directory: C:\Users\Public\Temp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/20/2024   8:16 PM                Documents
+Initiating backup of Documents
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\Documents\
+     Dest : C:\Users\Public\Temp\Documents\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Documents\
+The system cannot find the file specified.
+d-----        11/20/2024   8:16 PM                Desktop
+Initiating backup of Desktop
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\Desktop\
+     Dest : C:\Users\Public\Temp\Desktop\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Desktop\
+The system cannot find the file specified.
+d-----        11/20/2024   8:16 PM                Pictures
+Initiating backup of Pictures
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\Pictures\
+     Dest : C:\Users\Public\Temp\Pictures\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Pictures\
+The system cannot find the file specified.
+d-----        11/20/2024   8:16 PM                Videos
+Initiating backup of Videos
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\Videos\
+     Dest : C:\Users\Public\Temp\Videos\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Videos\
+The system cannot find the file specified.
+d-----        11/20/2024   8:16 PM                Music
+Initiating backup of Music
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\Music\
+     Dest : C:\Users\Public\Temp\Music\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Music\
+The system cannot find the file specified.
+d-----        11/20/2024   8:16 PM                Downloads
+Initiating backup of Downloads
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 20, 2024 8:16:23 PM
+   Source : C:\Users\Downloads\
+     Dest : C:\Users\Public\Temp\Downloads\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+2024/11/20 20:16:23 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Downloads\
+The system cannot find the file specified.
+
+
+    Directory: C:\ProgramData\IntuneMigration
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/20/2024   8:16 PM              0 MIGRATE.txt
+Get-ScheduledTask : No MSFT_ScheduledTask objects found with property 'TaskPath' equal to 
+'\Microsoft\Windows\EnterpriseMgmt\\'.  Verify the value of the property and retry.
+At C:\Windows\IMECache\3f94bdf5-4ae4-477f-8240-366b4b8e3d49_2\StartMigrate.ps1:260 char:10
++ $tasks = Get-ScheduledTask -TaskPath $taskPath
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\Microsoft\Windows\EnterpriseMgmt\\:String) [Get-ScheduledTask], 
+CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_TaskPath,Get-ScheduledTask
+Get-ScheduledTask : No MSFT_ScheduledTask objects found with property 'TaskPath' equal to
+'\Microsoft\Windows\EnterpriseMgmt\\'.  Verify the value of the property and retry.
+At C:\Windows\IMECache\3f94bdf5-4ae4-477f-8240-366b4b8e3d49_2\StartMigrate.ps1:260 char:10
++ $tasks = Get-ScheduledTask -TaskPath $taskPath
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\Microsoft\Windows\EnterpriseMgmt\\:String) [Get-ScheduledTask], CimJob
+   Exception
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_TaskPath,Get-ScheduledTask
+
+No tasks found in folder: \Microsoft\Windows\EnterpriseMgmt\\
+Removed previous Intune enrollment
+Leaving the 2dfc17cb-34ca-4d05-b4e9-4631cdf7d9cf Azure AD and Intune environment
+SUCCESS: The scheduled task "AutopilotRegistration" has successfully been created.
+Created AutopilotRegistration task
+SUCCESS: The scheduled task "MigrateBitlockerKey" has successfully been created.
+Created MigrateBitlockerKey task
+SUCCESS: The scheduled task "SetPrimaryUser" has successfully been created.
+Created SetPrimaryUser task
+SUCCESS: The scheduled task "GroupTag" has successfully been created.
+Created GroupTag task
+SUCCESS: The scheduled task "MiddleBoot" has successfully been created.
+Created MiddleBoot task
+SUCCESS: The scheduled task "RestoreProfile" has successfully been created.
+Created RestoreProfile task
+Installing provisioning package for new Azure AD tenant
+
+IsInstalled     : False
+PackageID       : 50da08e3-986f-4bd9-af44-8143522bd9fd
+PackageName     : migrate
+PackagePath     : C:\ProgramData\IntuneMigration\migrate.ppkg
+Description     :
+Rank            : 0
+Altitude        : 2000
+Version         : 1.1
+OwnerType       : OEM
+Notes           :
+LastInstallTime : 11/20/2024 8:16:35 PM
+Result          : 0__Accounts_Azure.provxml
+                  	Category:DeviceAADJoin,DeviceAADJoin
+                  	LastResult:Success
+                  	Message:
+                  	NumberOfFailures:
+
+                  1__Accounts_Users_DTCAdmin.provxml
+                  	Category:LocalAccount
+                  	LastResult:Success
+                  	Message:Provisioning succeeded
+                  	NumberOfFailures:0 (0x0)
+
+                  2__Policies_ApplicationManagement_AllowAllTrustedApps.provxml
+                  	Category:Policies
+                  	LastResult:Success
+                  	Message:Policies applied successfully.
+                  	NumberOfFailures:0 (0x0)
+
+                  3__DevDetail_DNSComputerName.provxml
+                  	Category:Reboot,DeviceName
+                  	LastResult:Success
+                  	Message:Device name set successfully. Reboot successfully scheduled.
+                  	NumberOfFailures:0 (0x0)
+
+                  4__OOBE_Desktop_HideOobe.provxml
+                  	Category:InitialCustomization
+                  	LastResult:Success
+                  	Message:
+                  	NumberOfFailures:
+
+
+
+Attempting to Delete the Intune object...
+
+Intune object deleted.
+Autopilot ID is null.  Skipping Autopilot object deletion...
+A system shutdown has already been scheduled.(1190)
+**********************
+Windows PowerShell transcript end
+End time: 20241120201639
+**********************
