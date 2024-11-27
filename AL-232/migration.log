@@ -1,0 +1,1270 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241127142419
+Username: WORKGROUP\SYSTEM
+RunAs User: WORKGROUP\SYSTEM
+Configuration Name: 
+Machine: DTCLAB-706 (Microsoft Windows NT 10.0.22621.0)
+Host Application: powershell.exe -executionpolicy bypass .\StartMigrate.ps1
+Process ID: 8796
+PSVersion: 5.1.22621.4249
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4249
+BuildVersion: 10.0.22621.4249
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\ProgramData\IntuneMigration\migration.log
+Running as...
+nt authority\system
+
+Authenticating to MS Graph...
+MS Graph Authenticated
+Gathering device info...
+Serial number is 0000-0010-2556-5608-3666-5182-90
+Autopilot ID is
+Intune ID is 85f1e662-7e95-428f-a87a-40de0c6f7346
+Current Autopilot GroupTag is .
+Current active user is Remote Support
+-a----        11/27/2024   2:24 PM              0 MEM_Settings.xml
+Setting local content to C:\ProgramData\IntuneMigration\MEM_Settings.xml
+Setting MDM registry value for AllowMicrosoftAccountConnection...
+The operation completed successfully.
+
+Turning off Last Signed-In User Display....
+Enabled Interactive Logon policy
+C:\Users\Remote Support\AppData\Local size is 0.01 Gb
+C:\Users\Remote Support\AppData\Roaming size is 0.00 Gb
+C:\Users\Remote Support\Documents size is 0.00 Gb
+C:\Users\Remote Support\Desktop size is 0.00 Gb
+C:\Users\Remote Support\Pictures size is 0.00 Gb
+C:\Users\Remote Support\Videos size is 0.00 Gb
+C:\Users\Remote Support\Music size is 0.00 Gb
+C:\Users\Remote Support\Downloads size is 0.00 Gb
+The size of Remote Support user data is 0.01 GB.
+There is 102.42 GB of free space available on the PC.
+0.02 GB is required to transfer local user data.
+102.42 GB of free space is sufficient to transfer 0.01 GB of local user data.  Begin transfer...
+
+
+    Directory: C:\Users\Public\Temp\AppData
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/27/2024   2:24 PM                Local
+Initiating backup of AppData\Local
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:25 PM
+   Source : C:\Users\Remote Support\AppData\Local\
+     Dest : C:\Users\Public\Temp\AppData\Local\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           1    C:\Users\Remote Support\AppData\Local\
+100%        New File                7012        IconCache.db
+            junction      -1    C:\Users\Remote Support\AppData\Local\Application Data\
+            junction      -1    C:\Users\Remote Support\AppData\Local\History\
+            junction      -1    C:\Users\Remote Support\AppData\Local\Temporary Internet Files\
+          New Dir          4    C:\Users\Remote Support\AppData\Local\ConnectedDevicesPlatform\
+100%        New File               11362        CDPGlobalSettings.cdp
+100%        New File                 655        Connected Devices Platform certificates.sst
+100%        New File                 986        L.Remote Support.cdp
+100%        New File                  54        L.Remote Support.cdpresource
+          New Dir          3    C:\Users\Remote Support\AppData\Local\ConnectedDevicesPlatform\L.Remote Support\
+100%        New File                4096        ActivitiesCache.db
+100%        New File               32768        ActivitiesCache.db-shm
+100%        New File              428512        ActivitiesCache.db-wal
+          New Dir          0    C:\Users\Remote Support\AppData\Local\ITSPlatform\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\ITSPlatform\log\
+100%        New File                1215        platform_communicator_tray_DTCLAB-706_Remote_Support.log
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\EDP\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\EDP\Recovery\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\EDP\Recovery\Input\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\EDP\Recovery\Output\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\GameDVR\
+100%        New File              646576        KnownGameList.bin
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\GameDVR\GameMRU\
+            New File                   0        LocalMruGameList.json
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\af-ZA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-AE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-BH\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-DZ\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-EG\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-IQ\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-JO\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-KW\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-LB\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-LY\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-MA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-OM\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-QA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-SA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-SY\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-TN\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ar-YE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\az-Latn-AZ\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\bg-BG\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\bn-BD\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ca-ES\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\cs-CZ\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\da-DK\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\de-AT\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\de-CH\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\de-DE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\de-LI\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\de-LU\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\el-GR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-029\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-AU\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-BZ\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-CA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-GB\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-HK\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-ID\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-IE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-IN\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-JM\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-MY\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-NZ\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-SG\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-TT\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-ZA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\en-ZW\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-419\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-AR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-BO\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-CL\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-CO\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-CR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-DO\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-EC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-ES\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-GT\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-HN\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-MX\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-NI\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-PA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-PE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-PR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-PY\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-SV\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-US\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-UY\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\es-VE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\et-EE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\eu-ES\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fa-IR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fi-FI\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-029\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-BE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-CA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-CD\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-CH\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-CI\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-CM\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-FR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-HT\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-LU\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-MA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-MC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-ML\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-RE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\fr-SN\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\gl-ES\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ha-Latn-NG\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\he-IL\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\hi-IN\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\hr-BA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\hr-HR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\hu-HU\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\hy-AM\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\id-ID\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\it-CH\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\it-IT\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ka-GE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\kk-KZ\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\lt-LT\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\lv-LV\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\mk-MK\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ms-BN\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ms-MY\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\nb-NO\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\nl-BE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\nl-NL\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\pl-PL\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\pt-BR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\pt-PT\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ro-MD\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ro-RO\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\ru-RU\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sk-SK\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sl-SI\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sq-AL\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sr-Cyrl-BA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sr-Cyrl-ME\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sr-Cyrl-RS\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sr-Latn-BA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sr-Latn-ME\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sr-Latn-RS\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sv-FI\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\sv-SE\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\tr-TR\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\uk-UA\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\input\uz-Latn-UZ\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\PenWorkspace\
+100%        New File                1022        DiscoverCacheData.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Vault\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\Vault\4BF4C442-9B8A-41A0-B380-DD4A704DDB
+28\
+100%        New File                 436        Policy.vpol
+          New Dir          7    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\
+            New File              786432        UsrClass.dat
+2024/11/27 14:24:25 ERROR 2 (0x00000002) Changing File Attributes C:\Users\Remote Support\AppData\Local\Microsoft\Window
+s\UsrClass.dat
+The system cannot find the file specified.
+
+            New File              724992        UsrClass.dat.LOG1
+2024/11/27 14:24:25 ERROR 2 (0x00000002) Changing File Attributes C:\Users\Remote Support\AppData\Local\Microsoft\Window
+s\UsrClass.dat.LOG1
+The system cannot find the file specified.
+
+            New File              630784        UsrClass.dat.LOG2
+2024/11/27 14:24:25 ERROR 2 (0x00000002) Changing File Attributes C:\Users\Remote Support\AppData\Local\Microsoft\Window
+s\UsrClass.dat.LOG2
+The system cannot find the file specified.
+
+100%        New File               65536        UsrClass.dat{9cd4e912-ac9e-11ef-8a01-000d3a180a09}.TM.blf
+            New File              524288        UsrClass.dat{9cd4e912-ac9e-11ef-8a01-000d3a180a09}.TMContainer0000000000
+100%  0001.regtrans-ms
+            New File              524288        UsrClass.dat{9cd4e912-ac9e-11ef-8a01-000d3a180a09}.TMContainer0000000000
+100%  0002.regtrans-ms
+            New File                   0        WebCacheLock.dat
+            junction      -1    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\0\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\1033\
+100%        New File              433190        StructuredQuerySchema.bin
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Application Shortcuts\
+100%        New File                 174        desktop.ini
+          New Dir          4    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Caches\
+100%        New File               16384        cversions.1.db
+100%        New File               16384        cversions.3.db
+100%        New File               62184        {3DA71D5A-20CC-432F-A115-DFE92379E91F}.3.ver0x0000000000000003.db
+100%        New File               84896        {AFBF9F1A-8EE8-4C77-AF34-C647E37CA0D9}.1.ver0x0000000000000001.db
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\CloudStore\
+          New Dir         31    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Explorer\
+100%        New File              360448        ExplorerStartupLog.etl
+100%        New File                  24        iconcache_1280.db
+100%        New File               1.0 m        iconcache_16.db
+100%        New File                  24        iconcache_1920.db
+100%        New File                  24        iconcache_256.db
+100%        New File                  24        iconcache_2560.db
+100%        New File               1.0 m        iconcache_32.db
+100%        New File               1.0 m        iconcache_48.db
+100%        New File                  24        iconcache_768.db
+100%        New File                  24        iconcache_96.db
+100%        New File                  24        iconcache_custom_stream.db
+100%        New File                  24        iconcache_exif.db
+100%        New File                7416        iconcache_idx.db
+100%        New File                  24        iconcache_sr.db
+100%        New File                  24        iconcache_wide.db
+100%        New File                  24        iconcache_wide_alternate.db
+100%        New File                  24        thumbcache_1280.db
+100%        New File                  24        thumbcache_16.db
+100%        New File                  24        thumbcache_1920.db
+100%        New File               1.0 m        thumbcache_256.db
+100%        New File                  24        thumbcache_2560.db
+100%        New File                  24        thumbcache_32.db
+100%        New File                  24        thumbcache_48.db
+100%        New File                  24        thumbcache_768.db
+100%        New File                  24        thumbcache_96.db
+100%        New File                  24        thumbcache_custom_stream.db
+100%        New File                  24        thumbcache_exif.db
+100%        New File                7416        thumbcache_idx.db
+100%        New File                  24        thumbcache_sr.db
+100%        New File                  24        thumbcache_wide.db
+100%        New File                  24        thumbcache_wide_alternate.db
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\GameExplorer\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\History\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\INetCookies\
+          New Dir          4    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Notifications\
+100%        New File               1.0 m        wpndatabase.db
+100%        New File               32768        wpndatabase.db-shm
+100%        New File               49472        wpndatabase.db-wal
+            New File                   0        WPNPRMRY.tmp
+2024/11/27 14:24:26 ERROR 2 (0x00000002) Changing File Attributes C:\Users\Remote Support\AppData\Local\Microsoft\Window
+s\Notifications\WPNPRMRY.tmp
+The system cannot find the file specified.
+
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Notifications\wpnidm\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Ringtones\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\RoamingTiles\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\SFAP\
+100%        New File                 326        cache0.bin
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\Shell\
+100%        New File               64439        DefaultLayouts.xml
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\WebCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\WinX\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\WinX\Group1\
+100%        New File                1109        1 - Desktop.lnk
+100%        New File                  75        desktop.ini
+          New Dir          6    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\WinX\Group2\
+100%        New File                1109        1 - Run.lnk
+100%        New File                1109        2 - Search.lnk
+100%        New File                1109        3 - Windows Explorer.lnk
+100%        New File                1492        4 - Control Panel.lnk
+100%        New File                1021        5 - Task Manager.lnk
+100%        New File                 325        desktop.ini
+          New Dir         12    C:\Users\Remote Support\AppData\Local\Microsoft\Windows\WinX\Group3\
+100%        New File                1127        01a - Windows PowerShell.lnk
+100%        New File                1171        02a - Windows PowerShell.lnk
+100%        New File                1015        03 - Computer Management.lnk
+100%        New File                1015        04 - Disk Management.lnk
+100%        New File                1582        04-1 - NetworkStatus.lnk
+100%        New File                1075        05 - Device Manager.lnk
+100%        New File                1562        06 - SystemAbout.lnk
+100%        New File                1015        07 - Event Viewer.lnk
+100%        New File                1578        08 - PowerAndSleep.lnk
+100%        New File                1015        09 - Mobility Center.lnk
+100%        New File                1578        10 - AppsAndFeatures.lnk
+100%        New File                 807        desktop.ini
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\Windows Sidebar\
+100%        New File                  80        settings.ini
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\Windows Sidebar\Gadgets\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\WindowsApps\
+            New File                   0        MicrosoftWindows.DesktopStickerEditorCentennial.exe
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Microsoft\WindowsApps\Backup\
+          New Dir          1    C:\Users\Remote Support\AppData\Local\Microsoft\WindowsApps\MicrosoftWindows.Client.CBS_
+cw5n1h2txyewy\
+            New File                   0        MicrosoftWindows.DesktopStickerEditorCentennial.exe
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\AC\
+
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\AC\
+INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\AC\
+INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\AC\
+INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\AC\
+Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\App
+Data\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\Loc
+alCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\Loc
+alState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\Roa
+mingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\Set
+tings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\Sys
+temAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.549981C3F5F10_8wekyb3d8bbwe\Tem
+pState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+RoamingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\
+TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\AC\
+
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\AC\
+INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\AC\
+INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\AC\
+INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\AC\
+Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\App
+Data\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\Loc
+alCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\Loc
+alState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\Roa
+mingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\Set
+tings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\Sys
+temAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.BioEnrollment_cw5n1h2txyewy\Tem
+pState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\AC\INetCa
+che\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\AC\INetCo
+okies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\AC\INetHi
+story\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\LocalCach
+e\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\LocalStat
+e\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\RoamingSt
+ate\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\Settings\
+
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\SystemApp
+Data\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Copilot_8wekyb3d8bbwe\TempState
+\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\AC\INe
+tCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\AC\INe
+tCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\AC\INe
+tHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\AC\Tem
+p\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\AppDat
+a\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\LocalC
+ache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\LocalS
+tate\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\Roamin
+gState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\Settin
+gs\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\System
+AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Getstarted_8wekyb3d8bbwe\TempSt
+ate\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\RoamingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.MicrosoftEdge.Stable_8wekyb3d8b
+bwe\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Framework.2.2_8wekyb
+3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Framework.2.2_8wekyb
+3d8bbwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Framework.2.2_8wekyb
+3d8bbwe\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Framework.2.2_8wekyb
+3d8bbwe\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Framework.2.2_8wekyb
+3d8bbwe\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Framework.2.2_8wekyb
+3d8bbwe\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Runtime.2.2_8wekyb3d
+8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Runtime.2.2_8wekyb3d
+8bbwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Runtime.2.2_8wekyb3d
+8bbwe\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Runtime.2.2_8wekyb3d
+8bbwe\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Runtime.2.2_8wekyb3d
+8bbwe\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.NET.Native.Runtime.2.2_8wekyb3d
+8bbwe\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe\AC\IN
+etCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe\AC\IN
+etCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe\AC\IN
+etHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe\AC\Te
+mp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb
+3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb
+3d8bbwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb
+3d8bbwe\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb
+3d8bbwe\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb
+3d8bbwe\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb
+3d8bbwe\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00_8wekyb3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00_8wekyb3d8bbwe\AC\
+
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00_8wekyb3d8bbwe\AC\
+INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00_8wekyb3d8bbwe\AC\
+INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00_8wekyb3d8bbwe\AC\
+INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.VCLibs.140.00_8wekyb3d8bbwe\AC\
+Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\RoamingState\
+          New Dir          4    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+100%        New File                8192        settings.dat.LOG1
+            New File                   0        settings.dat.LOG2
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.CloudExperienceHost_cw5
+n1h2txyewy\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\RoamingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_
+cw5n1h2txyewy\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\RoamingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5
+n1h2txyewy\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\RoamingState\
+          New Dir          4    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+100%        New File                8192        settings.dat.LOG1
+            New File                   0        settings.dat.LOG2
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost
+_cw5n1h2txyewy\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\AC\I
+NetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\AC\I
+NetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\AC\I
+NetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\AC\T
+emp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\AppD
+ata\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\Loca
+lCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\Loca
+lState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\Roam
+ingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\Sett
+ings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\Syst
+emAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.WindowsStore_8wekyb3d8bbwe\Temp
+State\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\RoamingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\Microsoft.XboxIdentityProvider_8wekyb3d8b
+bwe\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\RoamingState\
+          New Dir          4    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+100%        New File                8192        settings.dat.LOG1
+            New File                   0        settings.dat.LOG2
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\AC\INetCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\AC\INetCookies\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\AC\INetHistory\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\AC\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\RoamingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\MicrosoftWindows.Client.WebExperience_cw5
+n1h2txyewy\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\AC\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\AppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\LocalCache\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\LocalState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\RoamingState\
+          New Dir          2    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\Settings\
+            New File                   0        roaming.lock
+100%        New File                8192        settings.dat
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\SystemAppData\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Packages\windows.immersivecontrolpanel_cw5n1h2txye
+wy\TempState\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\Temp\
+          New Dir          0    C:\Users\Remote Support\AppData\Local\VirtualStore\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :       397       392         5         0         0         0
+   Files :       122       118         0         0         4         0
+   Bytes :   10.43 m    8.38 m         0         0    2.04 m         0
+   Times :   0:00:01   0:00:00                       0:00:00   0:00:01
+
+
+   Speed :           29,226,524 Bytes/sec.
+   Speed :            1,672.355 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+d-----        11/27/2024   2:24 PM                Roaming
+Initiating backup of AppData\Roaming
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:27 PM
+   Source : C:\Users\Remote Support\AppData\Roaming\
+     Dest : C:\Users\Public\Temp\AppData\Roaming\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           0    C:\Users\Remote Support\AppData\Roaming\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Crypto\
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Crypto\Keys\
+100%        New File                 960        de7cf8a7901d2ad13e5c67c29e5d1662_4e6e5b23-2524-4235-a173-0ba44c771fa9
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Crypto\RSA\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Crypto\RSA\S-1-5-21-57521585-129533613
+8-1146470253-1001\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Internet Explorer\
+          New Dir          3    C:\Users\Remote Support\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\
+100%        New File                 148        desktop.ini
+100%        New File                 352        Shows Desktop.lnk
+100%        New File                 334        Window Switcher.lnk
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pi
+nned\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pi
+nned\ImplicitAppShortcuts\
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Protect\
+100%        New File                  24        CREDHIST
+          New Dir          2    C:\Users\Remote Support\AppData\Roaming\Microsoft\Protect\S-1-5-21-57521585-1295336138-1
+146470253-1001\
+100%        New File                 468        f9c8eb7f-2208-4a5b-b4e6-7c4dfd380a4d
+100%        New File                  24        Preferred
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Spelling\
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Spelling\neutral\
+100%        New File                   2        default.dic
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\SystemCertificates\
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\SystemCertificates\My\
+            New File                   0        AppContainerUserCertRead
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\SystemCertificates\My\Certificates\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\SystemCertificates\My\CRLs\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\SystemCertificates\My\CTLs\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Vault\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\AccountPictures\
+100%        New File                 196        desktop.ini
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\CloudStore\
+          New Dir          5    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Libraries\
+100%        New File                 302        desktop.ini
+100%        New File                2141        Documents.library-ms
+100%        New File                2098        Music.library-ms
+100%        New File                2116        Pictures.library-ms
+100%        New File                2126        Videos.library-ms
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Network Shortcuts\
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Printer Shortcuts\
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Recent\
+100%        New File                 432        desktop.ini
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations\
+100%        New File                  24        7e4dca80246863e3.customDestinations-ms
+          New Dir          5    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\SendTo\
+100%        New File                   3        Compressed (zipped) Folder.ZFSendToTarget
+100%        New File                   7        Desktop (create shortcut).DeskLink
+100%        New File                 440        Desktop.ini
+            New File                   0        Documents.mydocs
+100%        New File                   4        Mail Recipient.MAPIMail
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\
+100%        New File                 174        desktop.ini
+          New Dir          3    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\
+100%        New File                1281        Administrative Tools.lnk
+100%        New File                 476        desktop.ini
+100%        New File                 407        File Explorer.lnk
+          New Dir          6    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessibil
+ity\
+100%        New File                 806        Desktop.ini
+100%        New File                1116        LiveCaptions.lnk
+100%        New File                1106        Magnify.lnk
+100%        New File                1108        Narrator.lnk
+100%        New File                1106        On-Screen Keyboard.lnk
+100%        New File                1114        VoiceAccess.lnk
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessorie
+s\
+100%        New File                 170        Desktop.ini
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Administra
+tive Tools\
+100%        New File                 174        desktop.ini
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Maintenanc
+e\
+100%        New File                 170        Desktop.ini
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
+100%        New File                 174        desktop.ini
+          New Dir          4    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Too
+ls\
+100%        New File                1142        Command Prompt.lnk
+100%        New File                 405        Control Panel.lnk
+100%        New File                 566        Desktop.ini
+100%        New File                 409        Run.lnk
+          New Dir          2    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows Po
+werShell\
+100%        New File                2539        Windows PowerShell (x86).lnk
+100%        New File                2539        Windows PowerShell.lnk
+          New Dir          0    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Templates\
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Themes\
+100%        New File              136354        TranscodedWallpaper
+          New Dir          1    C:\Users\Remote Support\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles\
+100%        New File              105843        CachedImage_1024_768_POS4.jpg
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :        41        40         1         0         0         0
+   Files :        44        44         0         0         0         0
+   Bytes :   265.0 k   265.0 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           4,050,447 Bytes/sec.
+   Speed :             231.768 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+
+
+    Directory: C:\Users\Public\Temp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/27/2024   2:24 PM                Documents
+Initiating backup of Documents
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:27 PM
+   Source : C:\Users\Remote Support\Documents\
+     Dest : C:\Users\Public\Temp\Documents\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           1    C:\Users\Remote Support\Documents\
+100%        New File                 402        desktop.ini
+            junction      -1    C:\Users\Remote Support\Documents\My Music\
+            junction      -1    C:\Users\Remote Support\Documents\My Pictures\
+            junction      -1    C:\Users\Remote Support\Documents\My Videos\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         4         0         4         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :       402       402         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             201,000 Bytes/sec.
+   Speed :              11.501 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+d-----        11/27/2024   2:24 PM                Desktop
+Initiating backup of Desktop
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:27 PM
+   Source : C:\Users\Remote Support\Desktop\
+     Dest : C:\Users\Public\Temp\Desktop\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           1    C:\Users\Remote Support\Desktop\
+100%        New File                 282        desktop.ini
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :       282       282         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             282,000 Bytes/sec.
+   Speed :              16.136 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+d-----        11/27/2024   2:24 PM                Pictures
+Initiating backup of Pictures
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:27 PM
+   Source : C:\Users\Remote Support\Pictures\
+     Dest : C:\Users\Public\Temp\Pictures\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           1    C:\Users\Remote Support\Pictures\
+100%        New File                 504        desktop.ini
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :       504       504         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             252,000 Bytes/sec.
+   Speed :              14.420 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+d-----        11/27/2024   2:24 PM                Videos
+Initiating backup of Videos
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:27 PM
+   Source : C:\Users\Remote Support\Videos\
+     Dest : C:\Users\Public\Temp\Videos\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           1    C:\Users\Remote Support\Videos\
+100%        New File                 504        desktop.ini
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :       504       504         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             252,000 Bytes/sec.
+   Speed :              14.420 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+d-----        11/27/2024   2:24 PM                Music
+Initiating backup of Music
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:27 PM
+   Source : C:\Users\Remote Support\Music\
+     Dest : C:\Users\Public\Temp\Music\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           1    C:\Users\Remote Support\Music\
+100%        New File                 504        desktop.ini
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :       504       504         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             168,000 Bytes/sec.
+   Speed :               9.613 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+d-----        11/27/2024   2:24 PM                Downloads
+Initiating backup of Downloads
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, November 27, 2024 2:24:27 PM
+   Source : C:\Users\Remote Support\Downloads\
+     Dest : C:\Users\Public\Temp\Downloads\
+
+    Files : *.*
+
+ Exc Dirs : \Packages
+
+  Options : *.* /FFT /V /S /E /DCOPY:DA /COPY:DAT /ZB /XJ /R:0 /W:0
+
+------------------------------------------------------------------------------
+
+                           1    C:\Users\Remote Support\Downloads\
+100%        New File                 282        desktop.ini
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :       282       282         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :              94,000 Bytes/sec.
+   Speed :               5.379 MegaBytes/min.
+   Ended : Wednesday, November 27, 2024 2:24:27 PM
+
+
+    Directory: C:\ProgramData\IntuneMigration
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/27/2024   2:24 PM              0 MIGRATE.txt
+Get-ScheduledTask : No MSFT_ScheduledTask objects found with property 'TaskPath' equal to 
+'\Microsoft\Windows\EnterpriseMgmt\\'.  Verify the value of the property and retry.
+At C:\Windows\IMECache\3f94bdf5-4ae4-477f-8240-366b4b8e3d49_3\StartMigrate.ps1:260 char:10
++ $tasks = Get-ScheduledTask -TaskPath $taskPath
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\Microsoft\Windows\EnterpriseMgmt\\:String) [Get-ScheduledTask], 
+CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_TaskPath,Get-ScheduledTask
+Get-ScheduledTask : No MSFT_ScheduledTask objects found with property 'TaskPath' equal to
+'\Microsoft\Windows\EnterpriseMgmt\\'.  Verify the value of the property and retry.
+At C:\Windows\IMECache\3f94bdf5-4ae4-477f-8240-366b4b8e3d49_3\StartMigrate.ps1:260 char:10
++ $tasks = Get-ScheduledTask -TaskPath $taskPath
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\Microsoft\Windows\EnterpriseMgmt\\:String) [Get-ScheduledTask], CimJob
+   Exception
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_TaskPath,Get-ScheduledTask
+
+No tasks found in folder: \Microsoft\Windows\EnterpriseMgmt\\
+Removed previous Intune enrollment
+Leaving the 2dfc17cb-34ca-4d05-b4e9-4631cdf7d9cf Azure AD and Intune environment
+SUCCESS: The scheduled task "AutopilotRegistration" has successfully been created.
+Created AutopilotRegistration task
+SUCCESS: The scheduled task "MigrateBitlockerKey" has successfully been created.
+Created MigrateBitlockerKey task
+SUCCESS: The scheduled task "SetPrimaryUser" has successfully been created.
+Created SetPrimaryUser task
+SUCCESS: The scheduled task "GroupTag" has successfully been created.
+Created GroupTag task
+SUCCESS: The scheduled task "MiddleBoot" has successfully been created.
+Created MiddleBoot task
+SUCCESS: The scheduled task "RestoreProfile" has successfully been created.
+Created RestoreProfile task
+Installing provisioning package for new Azure AD tenant
+
+IsInstalled     : False
+PackageID       : 50da08e3-986f-4bd9-af44-8143522bd9fd
+PackageName     : migrate
+PackagePath     : C:\ProgramData\IntuneMigration\migrate.ppkg
+Description     :
+Rank            : 0
+Altitude        : 2000
+Version         : 1.2
+OwnerType       : OEM
+Notes           :
+LastInstallTime : 11/27/2024 2:24:40 PM
+Result          : 0__Accounts_Azure.provxml
+                  	Category:DeviceAADJoin,DeviceAADJoin
+                  	LastResult:Success
+                  	Message:
+                  	NumberOfFailures:
+
+                  1__Accounts_Users_DTCAdmin.provxml
+                  	Category:LocalAccount
+                  	LastResult:Success
+                  	Message:Provisioning succeeded
+                  	NumberOfFailures:0 (0x0)
+
+                  2__Policies_ApplicationManagement_AllowAllTrustedApps.provxml
+                  	Category:Policies
+                  	LastResult:Success
+                  	Message:Policies applied successfully.
+                  	NumberOfFailures:0 (0x0)
+
+                  3__DevDetail_DNSComputerName.provxml
+                  	Category:Reboot,DeviceName
+                  	LastResult:Success
+                  	Message:Device name set successfully. Reboot successfully scheduled.
+                  	NumberOfFailures:0 (0x0)
+
+                  4__OOBE_Desktop_HideOobe.provxml
+                  	Category:InitialCustomization
+                  	LastResult:Success
+                  	Message:
+                  	NumberOfFailures:
+
+
+
+Attempting to Delete the Intune object...
+
+Intune object deleted.
+Autopilot ID is null.  Skipping Autopilot object deletion...
+A system shutdown has already been scheduled.(1190)
+**********************
+Windows PowerShell transcript end
+End time: 20241127142444
+**********************
